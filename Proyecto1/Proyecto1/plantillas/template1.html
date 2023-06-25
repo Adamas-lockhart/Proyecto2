@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+probando template1 de h t m l 
+
+<p  style="color:black "> mi nombre es: {{nombre}} </p>
+
+<p style="color:rgba(255, 0, 0, 0.719) "> mi apellido es: {{apellido}} </p>
+
+<h1> este template fue creado el dia {{hoy}} </h1>
+
+<h3> lista de numeros </h3>
+
+<p> 
+{% for n in notas %}
+    {{n}}
+    <br>
+{% endfor %}
+
+{% for n in notas %}
+    {% if n > 4 %}
+        <p style="color:rgb(255, 0, 0)"> {{n}} </p>
+    {% else %} <p style="color: rgb(0, 255, 0)">{{n}} </p>
+    {%endif%}
+{%endfor%}
+</p>
+
+</body>
+</html>
